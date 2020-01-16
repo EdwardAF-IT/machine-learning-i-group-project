@@ -1,3 +1,6 @@
+# Custom files to ignore
+Arrest_Data_from_2010_to_Present.csv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
