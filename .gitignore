@@ -1,5 +1,7 @@
 # Custom files to ignore
 Arrest_Data_from_2010_to_Present.csv
+Cleansed.csv
+*.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
