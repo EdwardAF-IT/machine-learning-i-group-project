@@ -175,6 +175,7 @@ ggplot(data = bline) + geom_line(aes(bline[1], bline[2]))
 
 
 ```
+
 ```{r}
 #PAM (partitioning around medodoids)
 #prox <- rf$proximity
@@ -239,7 +240,7 @@ km <- kmeans(scaled_mca1_coord, 3, nstart = 100) #scaled kmeans
 v2 <- ggplot(data = mca1_coord[testing, ])+
   geom_line(aes(x = seq(1, length(testing), 1), y = scale(mca1_coord$Dim.1[testing]), col = 'Actuals'))+
   geom_line(aes(x = seq(1, length(testing), 1), y = scale(km$cluster), col = 'Predictions'))+
-  ggtitle("PAM clustering vs Actual MCA1 Dim 1") + xlab("") + ylab("Dim1")
+  ggtitle("KMeans clustering vs Actual MCA1 Dim 1") + xlab("") + ylab("Dim1")
 v2
 
 #ROC calculation
